@@ -24,6 +24,8 @@ class VideoPlayer(object):
         # open the video clip
         vid = cv2.VideoCapture(self.video_name)
 
+        # read an individual frame
+        reading, image = vid.read()
 
         while reading:
             # Frames to producer
